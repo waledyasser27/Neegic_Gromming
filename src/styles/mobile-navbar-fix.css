@@ -1,0 +1,64 @@
+/* Mobile navbar fixes: add or merge into your navbar CSS */
+
+/* Make the hamburger a large tap target and ensure it gets pointer events */
+.nav-toggle {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 12000 !important;
+  position: relative;
+  pointer-events: auto;
+}
+
+/* Ensure the menu appears above any decorated container and is scrollable */
+.nav-menu {
+  position: fixed !important; /* avoids clipping inside transformed parents */
+  top: calc(var(--header-height, 56px) + 8px); /* adjust var or hardcode if needed */
+  right: 12px;
+  left: auto;
+  width: calc(100% - 24px);
+  max-width: 420px;
+  background: #243447;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+  z-index: 11999 !important;
+  overflow: auto;
+  transform-origin: top right;
+  transition: opacity 240ms ease, transform 200ms ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Visible state when opened */
+.nav-menu.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Full-width fallback on small screens */
+@media (max-width: 600px) {
+  .nav-menu {
+    left: 6px;
+    right: 6px;
+    width: calc(100% - 12px);
+    top: calc(var(--header-height, 56px) + 4px);
+    border-radius: 8px;
+  }
+}
+
+/* Make sure nav links are comfortable to tap */
+.nav-menu a {
+  display: block;
+  padding: 12px 16px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(255,255,255,0.06);
+}
