@@ -54,7 +54,7 @@ body {
 ========================================== */
 
 :root{
-    --nav-height:70px;
+    --nav-height:90px;
 }
 
 .navbar {
@@ -95,7 +95,7 @@ body {
 }
 
 .nav-logo img{
-    height:70px;   /* أهم سطر لحل المشكلة */
+    height:80px;   /* أهم سطر لحل المشكلة */
     width:auto;
     display:block;
 }
