@@ -203,8 +203,8 @@ class LanguageToggle {
     getTranslations() {
         return {
             ar: {
-                'page.title': 'صالون العناية بالحيوانات الأليفة - خدمات احترافية',
-                'logo.title': 'صالون الحيوانات الأليفة',
+                'page.title': 'نجييك للعناية بالحيوانات الأليفة - خدمات احترافية',
+                'logo.title': 'نجييك للعناية بالحيوانات الأليفة',
                 'nav.home': 'الرئيسية',
                 'nav.about': 'من نحن',
                 'nav.services': 'خدماتنا',
@@ -277,8 +277,8 @@ class LanguageToggle {
                 'footer.copyright': '© 2024 صالون الحيوانات الأليفة. جميع الحقوق محفوظة.',
             },
             en: {
-                'page.title': 'Pet Care Salon - Professional Services',
-                'logo.title': 'Pet Grooming Salon',
+                'page.title': 'Neegic Pet Care Salon - Professional Services',
+                'logo.title': 'Neegic Grooming Salon',
                 'nav.home': 'Home',
                 'nav.about': 'About Us',
                 'nav.services': 'Services',
