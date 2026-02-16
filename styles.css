@@ -70,6 +70,17 @@ body {
     z-index: 1000;
     transition: var(--transition);
 }
+@media (max-width:768px){
+
+    :root{
+        --nav-height:*0px;
+    }
+
+    .nav-logo img{
+        height:70px;
+    }
+
+}
 
 .navbar.scrolled {
     background: rgba(255, 255, 255, 0.98);
